@@ -13,12 +13,12 @@ namespace Sweepstakes
         public int regNumber;
 
         // Ctor
-        public Contestant(string fname, string lname, string email)
+        public Contestant(string fname, string lname, string email, int regNum)
         {
             this.fname = fname;
             this.lname = lname;
             this.email = email;
-            regNumber = 0; //make dynamic, auto-assigned
+            regNumber = regNum;
         }
 
         // Methods
