@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Sweepstakes
 {
-    class UI
+    static class UI
     {
+        // Vars
+        static public string GetUserInputFor;
+        // Ctor
+        // Methods
     }
 }

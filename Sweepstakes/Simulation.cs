@@ -6,5 +6,12 @@ namespace Sweepstakes
 {
     class Simulation
     {
+        // Vars
+        // Ctor
+        // Methods
+        public void CreateMarketingFirmWithManager()
+        {
+
+        }
     }
 }

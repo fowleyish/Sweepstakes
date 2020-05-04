@@ -6,5 +6,8 @@ namespace Sweepstakes
 {
     class SweepstakesQueueManager : ISweepstakesManager
     {
+        // Vars
+        // Ctor
+        // Methods
     }
 }

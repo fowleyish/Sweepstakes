@@ -6,5 +6,8 @@ namespace Sweepstakes
 {
     class MarketingFirm
     {
+        // Vars
+        // Ctor
+        // Methods
     }
 }

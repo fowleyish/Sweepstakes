@@ -6,5 +6,8 @@ namespace Sweepstakes
 {
     class Sweepstakes
     {
+        // Vars
+        // Ctor
+        // Methods
     }
 }
