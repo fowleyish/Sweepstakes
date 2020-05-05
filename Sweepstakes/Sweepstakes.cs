@@ -45,10 +45,14 @@ namespace Sweepstakes
 
         public Contestant PickWinner()
         {
+            List<int> contestantNumbers = new List<int>();
             foreach(KeyValuePair<int, Contestant> contestant in contestants)
             {
-
+                contestantNumbers.Add(contestant.Key);
             }
+            Random r = new Random();
+            int winnerKey = r.Next(0, contestantNumbers.Count-1);
+            return contestants[winnerKey];
         }
 
         public void PrintContestantInfo(Contestant contestant)
