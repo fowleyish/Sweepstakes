@@ -49,6 +49,7 @@ namespace Sweepstakes
             }
         }
 
+        // Using MailKit package to send email to winning subscriber; documentation available here: https://github.com/jstedfast/MailKit
         public static void SendEmail(ISubscriber winner)
         {
             string winnerFullName = winner.fname + winner.lname;
