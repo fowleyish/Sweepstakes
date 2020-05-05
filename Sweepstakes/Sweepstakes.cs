@@ -15,7 +15,12 @@ namespace Sweepstakes
             {
                 return name;
             }
+            set
+            {
+                name = value;
+            }
         }
+
         // Ctor
         public Sweepstakes(string name)
         {
@@ -40,13 +45,15 @@ namespace Sweepstakes
 
         public Contestant PickWinner()
         {
-            // Loop through dictionary?
-            // Select someone?
+            foreach(KeyValuePair<int, Contestant> contestant in contestants)
+            {
+
+            }
         }
 
         public void PrintContestantInfo(Contestant contestant)
         {
-            // Assuming I need to go through the dictionary?
+            Console.WriteLine($"{contestant.regNumber}: {contestant.fname} {contestant.lname}, {contestant.email}");
         }
     }
 }

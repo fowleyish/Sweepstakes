@@ -7,7 +7,20 @@ namespace Sweepstakes
     class MarketingFirm
     {
         // Vars
+        private ISweepstakesManager _manager;
+
         // Ctor
+        public MarketingFirm(ISweepstakesManager manager)
+        {
+            _manager = manager;
+        }
+
         // Methods
+        public void CreateSweepstake()
+        {
+            Console.Write("Give the sweepstake a name: ");
+            string sName = Console.ReadLine();
+            Sweepstakes newSS = new Sweepstakes(sName);
+        }
     }
 }
