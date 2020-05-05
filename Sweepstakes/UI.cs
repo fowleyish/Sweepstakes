@@ -11,7 +11,7 @@ namespace Sweepstakes
         // Ctor
 
         // Methods
-        static Contestant Registration()
+        public static Contestant Registration()
         {
             Console.Write("First name: ");
             string fname = Console.ReadLine();

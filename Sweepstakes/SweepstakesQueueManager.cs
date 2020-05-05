@@ -9,5 +9,13 @@ namespace Sweepstakes
         // Vars
         // Ctor
         // Methods
+        public void InsertSweepstakes(Sweepstakes sweepstakes)
+        {
+
+        }
+        public Sweepstakes GetSweepstakes()
+        {
+
+        }
     }
 }
