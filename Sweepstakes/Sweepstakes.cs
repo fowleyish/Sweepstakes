@@ -39,7 +39,7 @@ namespace Sweepstakes
             }
             catch (ArgumentException)
             {
-                Console.WriteLine($"{newContestant.regNumber} already exists. Please try again.");
+                Console.WriteLine($"{newContestant.regNumber}: this registration number is already in use. Please try again.");
             }
         }
 

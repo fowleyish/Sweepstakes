@@ -21,6 +21,7 @@ namespace Sweepstakes
             Console.Write("Give the sweepstake a name: ");
             string sName = Console.ReadLine();
             Sweepstakes newSS = new Sweepstakes(sName);
+            _manager.InsertSweepstakes(newSS);
         }
     }
 }
