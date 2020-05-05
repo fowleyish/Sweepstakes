@@ -10,22 +10,19 @@ namespace Sweepstakes
         // Vars
         // Ctor
         // Methods
-        public void CreateMarketingFirmWithManager()
+        public MarketingFirm CreateMarketingFirmWithManager()
         {
             Console.Write("Stack or Queue?: ");
             string choice = Console.ReadLine();
             switch (choice)
             {
                 case "stack":
-                    new MarketingFirm(new SweepstakesStackManager());
-                    break;
+                    return new MarketingFirm(new SweepstakesStackManager());
                 case "queue":
-                    new MarketingFirm(new SweepstakesQueueManager());
-                    break;
+                    return new MarketingFirm(new SweepstakesQueueManager());
                 default:
                     Console.WriteLine("That is not a valid option.");
-                    CreateMarketingFirmWithManager();
-                    break;
+                    return CreateMarketingFirmWithManager();
             }
         }
     }
