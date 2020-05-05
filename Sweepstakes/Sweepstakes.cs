@@ -51,7 +51,8 @@ namespace Sweepstakes
                 contestantNumbers.Add(contestant.Key);
             }
             Random r = new Random();
-            int winnerKey = r.Next(0, contestantNumbers.Count-1);
+            int winnerIndex = r.Next(0, contestantNumbers.Count-1);
+            int winnerKey = contestantNumbers[winnerIndex];
             return contestants[winnerKey];
         }
 

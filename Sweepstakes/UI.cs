@@ -19,10 +19,8 @@ namespace Sweepstakes
             string lname = Console.ReadLine();
             Console.WriteLine("Email address: ");
             string email = Console.ReadLine();
-            Console.Write("Select a registration number: ");
-            int regNum = int.Parse(Console.ReadLine());
 
-            Contestant registrant = new Contestant(fname, lname, email, regNum);
+            Contestant registrant = new Contestant(fname, lname, email);
             return registrant;
         }
     }
