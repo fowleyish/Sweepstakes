@@ -23,7 +23,7 @@ namespace Sweepstakes
         // following the factory design pattern, this application is much more flexible 
         // than if the "new" keyword would have been used to hardcode which child class of
         // the ISweepstakesManager interface needs to be used on instatiation of a 
-        // MarketingFirm() object.
+        // MarketingFirm() object. NOTE: this is an example of Constructor DI.
 
         // Methods
         public void CreateSweepstake()
