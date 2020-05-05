@@ -7,6 +7,7 @@ namespace Sweepstakes
     class SweepstakesQueueManager : ISweepstakesManager
     {
         // Vars
+        private Queue<Sweepstakes> queue;
         // Ctor
         // Methods
         public void InsertSweepstakes(Sweepstakes sweepstakes)
