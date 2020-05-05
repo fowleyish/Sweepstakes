@@ -6,11 +6,8 @@ namespace Sweepstakes
 {
     static class UI
     {
-        // Vars
 
-        // Ctor
-
-        // Methods
+        // Methods - only one, used to gather user input for Contestant properties
         public static Contestant Registration()
         {
             Console.Write("First name: ");

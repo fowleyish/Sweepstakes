@@ -17,7 +17,8 @@ namespace Sweepstakes
         public string email;
         string ISubscriber.email { get => email; set => email = value; }
         public int regNumber;
-        static private int regNumbers = 0; // needs to be static? test
+        static private int regNumbers = 0; // Set to static so that the numbers continuously increment regardless of how many times Cotnestant is instantiated.
+        // I wasn't able to figure out how to test this; any feedback on how to best go about testing would be much appreciated!
         int ISubscriber.regNumber { get => regNumber; set => regNumber = value; }
         int ISubscriber.regNumbers { get => regNumbers; }
 
@@ -27,7 +28,7 @@ namespace Sweepstakes
             this.fname = fname;
             this.lname = lname;
             this.email = email;
-            regNumber = AssignRegNumber();
+            regNumber = AssignRegNumber(); // The idea with this method is to keep a continuous, automated tracking of registration numbers to ensure each Contestant has a unique ID for when they are later added to the Dictionary in Sweepstakes
         }
 
         // Methods
@@ -37,6 +38,7 @@ namespace Sweepstakes
             return regNumbers;
         }
 
+        // Invoked from Sweepstakes.PickWinner()
         public void Notify(ISubscriber loser, ISubscriber winner)
         {
             if (loser != winner)

@@ -12,6 +12,7 @@ namespace Sweepstakes
         // Methods
         public MarketingFirm CreateMarketingFirmWithManager()
         {
+            // user input to complete implementation of Factory design method
             Console.Write("Stack or Queue?: ");
             string choice = Console.ReadLine();
             switch (choice)
