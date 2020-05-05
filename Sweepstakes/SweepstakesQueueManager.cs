@@ -9,14 +9,20 @@ namespace Sweepstakes
         // Vars
         private Queue<Sweepstakes> queue;
         // Ctor
+        public SweepstakesQueueManager()
+        {
+            queue = new Queue<Sweepstakes>();
+        }
+
         // Methods
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
-
+            queue.Enqueue(sweepstakes);
         }
+
         public Sweepstakes GetSweepstakes()
         {
-
+            return queue.Dequeue();
         }
     }
 }
